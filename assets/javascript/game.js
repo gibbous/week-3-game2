@@ -7,7 +7,7 @@
                "a","b","c","d","e","f","g","h","i","j","k","l","m","n","o",
                "p","q","r","s","t","u","v","w","x","y","z"
                ];
-   var lettersGuessed;
+   var lettersGuessed = [];
    var gameOver = false;
 
 //FUNCTIONS
@@ -27,12 +27,14 @@ function psychic(){
 		//Update Guess Counter
 		guessCounter = guessCounter + 1;
 		remainingGuesses = remainingGuesses - 1;
-		console.log(guessCounter);
-		var targetDiv = document.getElementById("guessCounter");
-		targetDiv.innerHTML = guessCounter;
+	
 		var remainDiv = document.getElementById("remainingGuesses");
 		remainDiv.innerHTML = remainingGuesses;
 		
+	//add guessed letters to display
+	lettersGuessed.push(userGuess);
+		var guessDiv = document.getElementById("lettersGuessed");
+		guessDiv.innerHTML = lettersGuessed;
 
 	//compare computer guess to user guess
 	if (userGuess === computerGuess) {
