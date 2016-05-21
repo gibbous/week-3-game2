@@ -45,6 +45,7 @@ function psychic(){
 		winDiv.innerHTML = winCounter;
 		guessCounter = 0;
 		remainingGuesses = 10;
+		lettersGuessed.length = 0;
 		return psychic();
 		}
 
@@ -57,6 +58,7 @@ function psychic(){
 		loseDiv.innerHTML = lossCounter;
 		guessCounter = 0;
 		remainingGuesses = 10;
+		lettersGuessed.length = 0;
 		return psychic();
 		}
 
