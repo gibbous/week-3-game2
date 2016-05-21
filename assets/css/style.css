@@ -1,0 +1,58 @@
+body{
+	background: url(../images/nebula.jpg);
+}
+h1 {
+	font-family: 'Luckiest Guy', cursive;
+	font-size: 72px;
+	color: purple;
+	text-align: center;
+	line-height: 1.5;
+	text-shadow: 0 0 33px #FFFFFF;
+}
+
+h2 {
+	font-family: 'Jura', sans-serif;
+	line-height: 2;
+}
+
+div {
+	background: black;
+	color: #FFFFFF;
+}
+
+.container {
+	width:700px;
+	margin:auto;
+}
+
+#answer {
+	margin:auto;
+	height:50px;
+	width:500px;
+	padding:20px;
+	text-align: center;
+	font-family: 'Jura', sans-serif;
+	font-size: 32px;
+	box-shadow: 0 0 12px 4px #000000;
+    border-radius: 100px/50px;
+}
+
+#image, #game {
+	height:400px;
+	width:300px;
+	margin-top: 20px;
+	padding:20px;
+	border-width: 2px;
+	border-style: solid;
+	border-color: purple;
+	text-align:center;
+	font-size: 16px;
+
+}
+#image {
+	float:left;
+}
+
+#game {
+	float:right;
+}
